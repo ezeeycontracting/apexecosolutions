@@ -1,0 +1,17 @@
+# ── Apex Eco Solutions — Cloudflare Pages redirects ──
+# Canonical host: force www → non-www
+https://www.apexecosolutions.ca/* https://apexecosolutions.ca/:splat 301
+
+# Old WordPress pages → matching sections on the new one-page site
+/services      /#services 301
+/services/     /#services 301
+/about         /#about 301
+/about/        /#about 301
+/contact       /#contact 301
+/contact/      /#contact 301
+
+# WordPress default URLs (no SEO value) → homepage
+/category/uncategorized   / 301
+/category/uncategorized/  / 301
+/hello-world   / 301
+/hello-world/  / 301
