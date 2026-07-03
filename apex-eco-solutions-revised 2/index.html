@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Eco Solutions | Asbestos, Lead & Mould Abatement, BC</title>
+<meta name="description" content="WorkSafeBC-licensed hazardous materials abatement, fall protection & MEWP training. Serving Maple Ridge, BC and all of British Columbia. 35+ years combined experience.">
+<link rel="canonical" href="https://apexecosolutions.ca/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c0d">
+<meta name="geo.region" content="CA-BC">
+<meta name="geo.placename" content="Maple Ridge, British Columbia">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Apex Eco Solutions">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Apex Eco Solutions | Asbestos, Lead & Mould Abatement, BC">
+<meta property="og:description" content="WorkSafeBC-licensed asbestos, lead & mould abatement plus fall protection and MEWP safety training. Serving Maple Ridge and all of British Columbia.">
+<meta property="og:url" content="https://apexecosolutions.ca/">
+<meta property="og:image" content="https://apexecosolutions.ca/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Apex Eco Solutions | Asbestos, Lead & Mould Abatement, BC">
+<meta name="twitter:description" content="WorkSafeBC-licensed abatement & safety training across British Columbia.">
+<meta name="twitter:image" content="https://apexecosolutions.ca/assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:   #0b0c0d;
+    --dark:    #111315;
+    --steel:   #1c2025;
+    --slate:   #2a3038;
+    --mid:     #3d4650;
+    --smoke:   #8a949e;
+    --silver:  #c8d0d8;
+    --white:   #f2f4f6;
+    --lime:    #c8e600;
+    --lime-dk: #a8c000;
+    --lime-bg: rgba(200,230,0,0.08);
+    --warn:    #e85a1e;
+    --warn-bg: rgba(232,90,30,0.1);
+    --display: 'Bebas Neue', Impact, sans-serif;
+    --body:    'DM Sans', system-ui, sans-serif;
+    --ease:    cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--body);
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ─── CURSOR ─── */
+  .cur { position:fixed;top:0;left:0;z-index:9999;width:10px;height:10px;background:var(--lime);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);transition:width .25s,height .25s;mix-blend-mode:difference; }
+  .cur-r { position:fixed;top:0;left:0;z-index:9998;width:32px;height:32px;border:1.5px solid rgba(200,230,0,.45);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);transition:width .35s var(--ease),height .35s var(--ease); }
+
+  /* ─── UTILITY ─── */
+  .tag {
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--lime);
+  }
+  .tag::before { content:'';display:block;width:22px;height:2px;background:var(--lime); }
+  .big-heading {
+    font-family:var(--display);
+    font-size:clamp(3.5rem,8vw,8rem);
+    line-height:.95;
+    letter-spacing:.01em;
+    color:var(--white);
+  }
+  .big-heading .accent { color:var(--lime); }
+  .big-heading .stroke {
+    -webkit-text-stroke:1px var(--white);
+    color:transparent;
+  }
+  .body-p {
+    font-size:.97rem;line-height:1.8;color:var(--smoke);max-width:58ch;
+    font-weight:300;
+  }
+  .fade-up { opacity:0;transform:translateY(28px);transition:opacity .65s var(--ease),transform .65s var(--ease); }
+  .fade-up.in { opacity:1;transform:none; }
+  .d1{transition-delay:.08s} .d2{transition-delay:.16s} .d3{transition-delay:.24s} .d4{transition-delay:.32s} .d5{transition-delay:.4s}
+
+  /* ─── BUTTONS ─── */
+  .btn-lime {
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    background:var(--lime);color:var(--black);
+    padding:15px 36px;border-radius:2px;border:none;
+    text-decoration:none;cursor:pointer;
+    transition:background .2s,transform .2s,box-shadow .2s;
+  }
+  .btn-lime:hover { background:var(--lime-dk);transform:translateY(-2px);box-shadow:0 10px 30px rgba(200,230,0,.3); }
+  .btn-outline {
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    background:transparent;color:var(--white);
+    padding:14px 36px;border-radius:2px;border:1.5px solid rgba(255,255,255,.2);
+    text-decoration:none;cursor:pointer;
+    transition:border-color .2s,background .2s,transform .2s;
+  }
+  .btn-outline:hover { border-color:var(--lime);background:rgba(200,230,0,.06);transform:translateY(-2px); }
+  .arrow { font-size:1rem;transition:transform .2s; }
+  .btn-lime:hover .arrow, .btn-outline:hover .arrow { transform:translateX(4px); }
+
+  /* ─── TOP BAR ─── */
+  .topbar {
+    background:var(--lime);
+    display:flex;justify-content:flex-end;align-items:center;gap:28px;
+    padding:7px 5vw;
+    font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--black);
+  }
+  .topbar a { color:var(--black);text-decoration:none;transition:opacity .2s; }
+  .topbar a:hover { opacity:.7; }
+  .topbar-divider { opacity:.35; }
+
+  /* ─── NAV ─── */
+  nav {
+    position:sticky;top:0;z-index:1000;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 5vw;height:72px;
+    background:rgba(11,12,13,.95);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+  }
+  .nav-logo img {
+    height:48px;width:auto;object-fit:contain;
+    display:block;
+  }
+  .nav-logo span {
+    font-family:var(--display);font-size:1.7rem;letter-spacing:.06em;color:var(--white);
+    display:none;
+  }
+  .nav-links { display:flex;align-items:center;gap:32px;list-style:none; }
+  .nav-links a {
+    font-size:.73rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s;
+  }
+  .nav-links a:hover { color:var(--lime); }
+  .nav-cta { font-size:.73rem; }
+  .nav-ham { display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px; }
+  .nav-ham span { display:block;width:22px;height:1.5px;background:var(--white);transition:.3s; }
+
+  /* ─── MOBILE MENU ─── */
+  .mob-menu {
+    display:none;position:fixed;inset:0;z-index:999;
+    background:var(--dark);
+    flex-direction:column;justify-content:center;align-items:center;gap:28px;
+  }
+  .mob-menu.open { display:flex; }
+  .mob-menu a { font-family:var(--display);font-size:2.8rem;letter-spacing:.06em;color:var(--white);text-decoration:none;transition:color .2s; }
+  .mob-menu a:hover { color:var(--lime); }
+  .mob-close { position:absolute;top:24px;right:28px;font-size:1.6rem;cursor:pointer;background:none;border:none;color:var(--white); }
+
+  /* ─── HERO ─── */
+  #hero {
+    position:relative;min-height:92vh;
+    display:grid;grid-template-columns:1fr 1fr;
+    align-items:center;overflow:hidden;
+  }
+  .hero-left {
+    position:relative;z-index:2;
+    padding:80px 5vw 80px;
+    display:flex;flex-direction:column;gap:28px;
+    max-width:680px;
+  }
+  .hero-warning-tag {
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--warn-bg);border:1px solid rgba(232,90,30,.3);
+    color:var(--warn);border-radius:2px;
+    font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    padding:6px 14px;width:fit-content;
+  }
+  .hero-warning-tag::before { content:'⚠';font-size:.9rem; }
+  .hero-sub-text { font-size:1.05rem;color:var(--smoke);line-height:1.7;max-width:50ch;font-weight:300; }
+  .hero-actions { display:flex;gap:14px;flex-wrap:wrap; }
+  .hero-creds {
+    display:flex;gap:24px;flex-wrap:wrap;margin-top:8px;
+    border-top:1px solid rgba(255,255,255,.07);padding-top:24px;
+  }
+  .hero-cred {
+    display:flex;align-items:center;gap:8px;
+    font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+    color:rgba(255,255,255,.4);
+  }
+  .hero-cred-dot { width:6px;height:6px;border-radius:50%;background:var(--lime);flex-shrink:0; }
+
+  .hero-right {
+    position:relative;height:100%;min-height:600px;overflow:hidden;
+  }
+  .hero-right-img {
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    filter:brightness(.55) saturate(.6);
+  }
+  .hero-right-overlay {
+    position:absolute;inset:0;
+    background:linear-gradient(90deg,var(--black) 0%,transparent 35%),
+               linear-gradient(180deg,transparent 50%,rgba(11,12,13,.7) 100%);
+  }
+  /* diagonal cut */
+  .hero-right::before {
+    content:'';position:absolute;top:0;left:-1px;bottom:0;width:120px;z-index:2;
+    background:linear-gradient(90deg,var(--black),transparent);
+  }
+  .hero-stat-box {
+    position:absolute;bottom:40px;right:40px;z-index:3;
+    background:rgba(11,12,13,.85);backdrop-filter:blur(12px);
+    border:1px solid rgba(200,230,0,.2);border-radius:3px;
+    padding:20px 28px;
+    display:flex;gap:32px;
+  }
+  .hero-stat strong {
+    display:block;font-family:var(--display);font-size:2.8rem;color:var(--lime);line-height:1;
+  }
+  .hero-stat span { font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4); }
+
+  /* ─── TICKER ─── */
+  .ticker-wrap {
+    background:var(--lime);overflow:hidden;height:42px;display:flex;align-items:center;
+  }
+  .ticker {
+    display:flex;gap:0;white-space:nowrap;
+    animation:tickerScroll 22s linear infinite;
+  }
+  .ticker-item {
+    font-family:var(--display);font-size:1.1rem;letter-spacing:.08em;color:var(--black);
+    padding:0 32px;display:inline-flex;align-items:center;gap:12px;
+  }
+  .ticker-sep { opacity:.4; }
+  @keyframes tickerScroll {
+    from { transform:translateX(0); }
+    to   { transform:translateX(-50%); }
+  }
+
+  /* ─── TRUST STRIP ─── */
+  .trust-strip {
+    background:var(--steel);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    display:flex;justify-content:center;align-items:center;gap:48px;
+    padding:22px 5vw;flex-wrap:wrap;
+  }
+  .trust-item {
+    display:flex;align-items:center;gap:10px;
+    font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.45);
+  }
+  .trust-item .ti-dot { width:20px;height:20px;border-radius:50%;background:var(--lime-bg);border:1px solid var(--lime);display:flex;align-items:center;justify-content:center;font-size:.7rem; }
+
+  /* ─── SERVICES ─── */
+  #services { padding:110px 5vw;background:var(--dark); }
+  .services-header {
+    display:flex;align-items:flex-end;justify-content:space-between;gap:32px;
+    margin-bottom:56px;flex-wrap:wrap;
+  }
+  .services-grid {
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.05);border-radius:3px;overflow:hidden;
+  }
+  .svc-card {
+    background:var(--steel);padding:44px 36px 40px;
+    position:relative;overflow:hidden;
+    transition:background .3s;cursor:default;
+    display:flex;flex-direction:column;gap:16px;
+  }
+  .svc-card::before {
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--lime),transparent);
+    transform:scaleX(0);transform-origin:left;
+    transition:transform .4s var(--ease);
+  }
+  .svc-card:hover { background:var(--slate); }
+  .svc-card:hover::before { transform:scaleX(1); }
+  .svc-num {
+    font-family:var(--display);font-size:3.5rem;color:rgba(255,255,255,.06);
+    line-height:1;position:absolute;top:20px;right:24px;
+    transition:color .3s;
+  }
+  .svc-card:hover .svc-num { color:rgba(200,230,0,.1); }
+  .svc-icon { font-size:1.8rem; }
+  .svc-card h3 {
+    font-family:var(--display);font-size:1.7rem;letter-spacing:.04em;color:var(--white);
+    line-height:1.05;
+  }
+  .svc-card p { font-size:.86rem;color:var(--smoke);line-height:1.7;flex:1; }
+  .svc-link {
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--lime);text-decoration:none;margin-top:4px;
+    transition:gap .2s;
+  }
+  .svc-link:hover { gap:12px; }
+
+  /* ─── SERVICES DETAIL ─── */
+  #services-detail { padding:0 5vw 100px;background:var(--dark); }
+  .svc-detail-tabs {
+    display:flex;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:48px;
+    gap:0;overflow-x:auto;scrollbar-width:none;
+  }
+  .svc-detail-tabs::-webkit-scrollbar { display:none; }
+  .svc-tab {
+    font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(255,255,255,.35);padding:14px 28px;border:none;background:none;
+    cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;
+    transition:color .2s,border-color .2s;
+  }
+  .svc-tab.active { color:var(--lime);border-bottom-color:var(--lime); }
+  .svc-detail-panel { display:none; }
+  .svc-detail-panel.active { display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px; }
+  .svc-list-col h4 {
+    font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(255,255,255,.3);margin-bottom:16px;
+  }
+  .svc-list-col ul { list-style:none;display:flex;flex-direction:column;gap:10px; }
+  .svc-list-col ul li {
+    display:flex;align-items:flex-start;gap:10px;
+    font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.5;
+  }
+  .svc-list-col ul li::before { content:'→';color:var(--lime);flex-shrink:0;margin-top:1px; }
+
+  /* ─── ABOUT / FOUNDERS ─── */
+  #about { padding:110px 5vw;background:var(--black); }
+  .about-header { margin-bottom:72px; }
+  .founders-grid { display:grid;grid-template-columns:1fr 1fr;gap:24px; }
+  .founder-card {
+    background:var(--steel);border:1px solid rgba(255,255,255,.06);
+    border-radius:3px;overflow:hidden;
+    display:grid;grid-template-columns:180px 1fr;
+    transition:border-color .3s;
+  }
+  .founder-card:hover { border-color:rgba(200,230,0,.25); }
+  .founder-img-wrap {
+    position:relative;overflow:hidden;background:var(--slate);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .founder-img-wrap img {
+    width:100%;height:100%;object-fit:cover;
+    filter:grayscale(20%);
+    transition:filter .4s;
+  }
+  .founder-card:hover .founder-img-wrap img { filter:grayscale(0%); }
+  .founder-placeholder {
+    width:100%;height:100%;min-height:260px;
+    background:linear-gradient(135deg,var(--slate),var(--mid));
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-size:4rem;color:rgba(255,255,255,.1);
+  }
+  .founder-info { padding:32px 28px;display:flex;flex-direction:column;gap:12px; }
+  .founder-name { font-family:var(--display);font-size:1.8rem;letter-spacing:.04em;color:var(--white); }
+  .founder-title { font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lime); }
+  .founder-bio { font-size:.83rem;line-height:1.75;color:var(--smoke);flex:1; }
+  .founder-years {
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.3);
+  }
+  .founder-years strong { color:var(--white); }
+
+  /* ─── PROCESS ─── */
+  #process { padding:110px 5vw;background:var(--steel); }
+  .process-grid {
+    display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+    margin-top:60px;position:relative;
+  }
+  .process-grid::before {
+    content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;
+    background:linear-gradient(90deg,transparent,var(--lime),transparent);
+    opacity:.3;
+  }
+  .process-step { padding:0 16px;text-align:center;position:relative; }
+  .step-num {
+    width:56px;height:56px;border-radius:50%;
+    background:var(--dark);border:1.5px solid rgba(200,230,0,.3);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
+    font-family:var(--display);font-size:1.4rem;color:var(--lime);
+    position:relative;z-index:1;
+  }
+  .process-step h4 {
+    font-family:var(--display);font-size:1rem;letter-spacing:.06em;color:var(--white);
+    margin-bottom:8px;
+  }
+  .process-step p { font-size:.78rem;color:var(--smoke);line-height:1.6; }
+
+  /* ─── WHY / STATS ─── */
+  #why { padding:110px 5vw;background:var(--dark);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
+  .why-img-wrap { position:relative; }
+  .why-img-wrap img { width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;filter:grayscale(20%); }
+  .why-overlay-stat {
+    position:absolute;bottom:-16px;left:-16px;
+    background:var(--lime);color:var(--black);
+    padding:20px 28px;border-radius:3px;
+    box-shadow:0 12px 40px rgba(0,0,0,.5);
+  }
+  .why-overlay-stat strong { font-family:var(--display);font-size:3rem;display:block;line-height:1; }
+  .why-overlay-stat span { font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase; }
+  .why-content { display:flex;flex-direction:column;gap:24px; }
+  .why-list { display:flex;flex-direction:column;gap:16px;margin-top:8px; }
+  .why-item {
+    display:flex;gap:16px;
+    padding:20px 22px;
+    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:3px;
+    transition:border-color .3s,background .3s;
+  }
+  .why-item:hover { border-color:rgba(200,230,0,.2);background:var(--lime-bg); }
+  .why-item-icon { font-size:1.4rem;flex-shrink:0; }
+  .why-item-text h4 { font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--white);margin-bottom:5px; }
+  .why-item-text p { font-size:.83rem;color:var(--smoke);line-height:1.6; }
+
+  /* ─── WHY GALLERY (collage) ─── */
+  .why-gallery { display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+  .why-gallery img { width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px;
+    filter:grayscale(15%);transition:transform .5s var(--ease),filter .5s;display:block; }
+  .why-gallery img:hover { filter:grayscale(0%);transform:scale(1.04); }
+  .why-gallery .g-feat { grid-column:1 / -1;aspect-ratio:16/9; }
+
+  /* ─── PRELOADER ─── */
+  #preloader { position:fixed;inset:0;z-index:99999;background:var(--black);
+    display:flex;align-items:center;justify-content:center;
+    transition:opacity .5s ease,visibility .5s ease; }
+  #preloader.done { opacity:0;visibility:hidden; }
+  .pl-inner { display:flex;flex-direction:column;align-items:center;gap:26px;width:min(280px,68vw); }
+  .pl-logo { width:100%;max-width:240px;height:auto;animation:plPulse 1.6s ease-in-out infinite; }
+  .pl-bar { width:100%;height:3px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden; }
+  .pl-bar-fill { width:0;height:100%;background:var(--lime);border-radius:3px;
+    box-shadow:0 0 12px rgba(200,230,0,.5);animation:plLoad 1s ease-out forwards; }
+  #preloader.done .pl-bar-fill { width:100%;transition:width .25s ease;animation:none; }
+  @keyframes plLoad { 0%{width:0} 100%{width:92%} }
+  @keyframes plPulse { 0%,100%{opacity:.82} 50%{opacity:1} }
+  @media (prefers-reduced-motion: reduce){ .pl-logo,.pl-bar-fill{animation:none} }
+
+  /* ─── CERTIFICATIONS ─── */
+  #certs {
+    background:var(--lime);padding:56px 5vw;
+    display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;
+  }
+  .certs-left h2 { font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);color:var(--black);line-height:1.1; }
+  .certs-left p { font-size:.9rem;color:rgba(11,12,13,.65);margin-top:8px;max-width:45ch; }
+  .certs-badges { display:flex;gap:12px;flex-wrap:wrap; }
+  .cert-badge {
+    background:rgba(11,12,13,.1);
+    border:1.5px solid rgba(11,12,13,.2);
+    border-radius:3px;padding:12px 20px;
+    font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--black);
+  }
+
+  /* ─── TESTIMONIALS ─── */
+  #testimonials { padding:110px 5vw;background:var(--black); }
+  .test-header { text-align:center;margin-bottom:56px; }
+  .test-header .tag { justify-content:center; }
+  .test-header .tag::before { display:none; }
+  .test-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px; }
+  .test-card {
+    background:var(--steel);border:1px solid rgba(255,255,255,.06);border-radius:3px;
+    padding:32px 28px;position:relative;
+    transition:border-color .3s;
+  }
+  .test-card:hover { border-color:rgba(200,230,0,.2); }
+  .test-card::before {
+    content:'\201C';font-family:var(--display);font-size:6rem;color:rgba(200,230,0,.07);
+    position:absolute;top:12px;right:20px;line-height:1;pointer-events:none;
+  }
+  .test-stars { color:var(--lime);font-size:.85rem;letter-spacing:2px;margin-bottom:14px; }
+  .test-text { font-size:.88rem;line-height:1.75;color:rgba(255,255,255,.7);margin-bottom:20px;font-style:italic; }
+  .test-author { display:flex;align-items:center;gap:12px; }
+  .test-avatar {
+    width:38px;height:38px;border-radius:50%;
+    background:linear-gradient(135deg,var(--mid),var(--slate));
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-size:1rem;color:var(--lime);
+    flex-shrink:0;
+  }
+  .test-name { font-size:.82rem;font-weight:700;color:var(--white); }
+  .test-role { font-size:.7rem;color:var(--smoke);letter-spacing:.06em; }
+
+  /* ─── CONTACT ─── */
+  #contact { padding:110px 5vw;background:var(--steel); }
+  .contact-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:start; }
+  .contact-info-col { display:flex;flex-direction:column;gap:24px; }
+  .contact-info-col .big-heading { font-size:clamp(2.8rem,5vw,5rem); }
+  .contact-details { display:flex;flex-direction:column;gap:16px;margin-top:8px; }
+  .contact-detail {
+    display:flex;align-items:flex-start;gap:14px;
+    padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:3px;
+  }
+  .contact-detail-icon { font-size:1.1rem;flex-shrink:0;margin-top:1px; }
+  .contact-detail-label { font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:3px; }
+  .contact-detail a, .contact-detail span { font-size:.95rem;color:var(--white);text-decoration:none;transition:color .2s; }
+  .contact-detail a:hover { color:var(--lime); }
+  .contact-social { display:flex;gap:10px;margin-top:4px; }
+  .soc-btn {
+    width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(255,255,255,.12);
+    display:flex;align-items:center;justify-content:center;
+    color:rgba(255,255,255,.4);text-decoration:none;font-size:.75rem;font-weight:700;
+    transition:border-color .2s,color .2s,background .2s;
+  }
+  .soc-btn:hover { border-color:var(--lime);color:var(--lime);background:var(--lime-bg); }
+
+  /* form */
+  .contact-form { display:flex;flex-direction:column;gap:14px; }
+  .form-row { display:grid;grid-template-columns:1fr 1fr;gap:14px; }
+  input, textarea, select {
+    width:100%;
+    background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);
+    border-radius:2px;padding:17px 20px;
+    font-family:var(--body);font-size:1rem;color:var(--white);
+    outline:none;transition:border-color .25s,background .25s;
+    -webkit-appearance:none;
+  }
+  input::placeholder, textarea::placeholder { color:rgba(255,255,255,.3); }
+  input:focus, textarea:focus, select:focus { border-color:var(--lime);background:rgba(200,230,0,.04); }
+  select option { background:var(--steel); }
+  textarea { resize:vertical;min-height:150px; }
+  .form-note { font-size:.72rem;color:rgba(255,255,255,.3);letter-spacing:.04em; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background:var(--black);border-top:1px solid rgba(255,255,255,.05);
+    padding:56px 5vw 28px;
+  }
+  .footer-top {
+    display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;
+    margin-bottom:40px;padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,.05);
+  }
+  .footer-brand-text { font-family:var(--display);font-size:2rem;letter-spacing:.06em;color:var(--white); }
+  .footer-brand-text span { color:var(--lime); }
+  .footer-brand p { font-size:.83rem;color:rgba(255,255,255,.35);line-height:1.7;margin-top:12px;max-width:34ch; }
+  .footer-col h5 { font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:18px; }
+  .footer-col ul { list-style:none;display:flex;flex-direction:column;gap:10px; }
+  .footer-col ul a { font-size:.83rem;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s; }
+  .footer-col ul a:hover { color:var(--lime); }
+  .footer-bottom {
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:.7rem;color:rgba(255,255,255,.2);letter-spacing:.06em;
+  }
+  .footer-bottom a { color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s; }
+  .footer-bottom a:hover { color:var(--lime); }
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:1024px){
+    #hero { grid-template-columns:1fr; }
+    .hero-right { min-height:380px;height:380px; }
+    .hero-right::before { display:none; }
+    .founders-grid { grid-template-columns:1fr; }
+    .founder-card { grid-template-columns:140px 1fr; }
+    .why { grid-template-columns:1fr; }
+    #why { grid-template-columns:1fr; }
+    .test-grid { grid-template-columns:1fr 1fr; }
+    .process-grid { grid-template-columns:repeat(3,1fr);gap:24px; }
+    .process-grid::before { display:none; }
+    .contact-grid { grid-template-columns:1fr; }
+    .footer-top { grid-template-columns:1fr 1fr; }
+    .svc-detail-panel.active { grid-template-columns:1fr 1fr; }
+  }
+  @media(max-width:768px){
+    .topbar { justify-content:center; }
+    .nav-links,.nav-cta { display:none; }
+    .nav-ham { display:flex; }
+    .services-grid { grid-template-columns:1fr; }
+    .test-grid { grid-template-columns:1fr; }
+    .founder-card { grid-template-columns:1fr; }
+    .founder-img-wrap { min-height:200px;max-height:200px; }
+    .process-grid { grid-template-columns:1fr 1fr;gap:24px; }
+    .svc-detail-panel.active { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .footer-top { grid-template-columns:1fr; gap:32px; }
+    #certs { flex-direction:column; }
+    .hero-stat-box { display:none; }
+    .hero-creds { gap:14px; }
+  }
+
+  /* ─── FAQ ─── */
+  #faq { padding:110px 5vw;background:var(--black); }
+  .faq-header { display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:48px; }
+  .faq-list { max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:12px; }
+  .faq-item { background:var(--steel);border:1px solid rgba(255,255,255,.06);border-radius:3px;overflow:hidden;transition:border-color .3s; }
+  .faq-item[open] { border-color:rgba(200,230,0,.25); }
+  .faq-item summary { list-style:none;cursor:none;padding:22px 26px;font-size:1rem;font-weight:500;color:var(--white);display:flex;justify-content:space-between;align-items:center;gap:20px; }
+  .faq-item summary::-webkit-details-marker { display:none; }
+  .faq-item summary::after { content:'+';font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--lime);transition:transform .3s var(--ease);flex-shrink:0; }
+  .faq-item[open] summary::after { transform:rotate(45deg); }
+  .faq-item .faq-a { padding:0 26px 24px;font-size:.92rem;line-height:1.8;color:var(--smoke);max-width:66ch; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://apexecosolutions.ca/#business",
+      "name": "Apex Eco Solutions",
+      "url": "https://apexecosolutions.ca/",
+      "telephone": "+1-778-220-1291",
+      "email": "info@apexecosolutions.ca",
+      "image": "https://apexecosolutions.ca/assets/og-image.jpg",
+      "logo": "https://apexecosolutions.ca/assets/logo.png",
+      "description": "WorkSafeBC-licensed asbestos, lead and mould abatement, plus fall protection and MEWP safety training. Serving Maple Ridge and all of British Columbia.",
+      "slogan": "Ensuring safety through expert abatement and training",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "addressLocality": "Maple Ridge", "addressRegion": "BC", "addressCountry": "CA" },
+      "areaServed": { "@type": "State", "name": "British Columbia" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "16:00" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61575614259385",
+        "https://www.instagram.com/apex.eco.solutions/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://apexecosolutions.ca/#website",
+      "url": "https://apexecosolutions.ca/",
+      "name": "Apex Eco Solutions",
+      "publisher": { "@id": "https://apexecosolutions.ca/#business" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What types of buildings do you service for abatement?", "acceptedAnswer": { "@type": "Answer", "text": "We provide abatement services for residential, commercial, and industrial properties, with solutions designed to address each property's specific hazardous material concerns while meeting all regulatory standards." } },
+        { "@type": "Question", "name": "How do I know if my property has asbestos, lead, or mould?", "acceptedAnswer": { "@type": "Answer", "text": "Properties built before the early 1990s are more likely to contain asbestos or lead-based materials, while mould can develop in any building with moisture issues. We can help connect you with certified consultants to handle proper testing before any work begins." } },
+        { "@type": "Question", "name": "Are your training programs certified and recognized?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, our Fall Protection and MEWP training programs follow industry standards and are certified, ensuring your workers meet provincial safety compliance and legal obligations." } },
+        { "@type": "Question", "name": "What safety measures do you take during abatement?", "acceptedAnswer": { "@type": "Answer", "text": "Safety measures vary depending on the risk level of the hazardous materials. Based on the type of material and the scope of work, different procedures are followed. These can include containment, negative air pressure, protective equipment, and safe disposal to protect workers, occupants, and the environment." } },
+        { "@type": "Question", "name": "How do I schedule a site assessment or consultation?", "acceptedAnswer": { "@type": "Answer", "text": "You can call us directly at 778-220-1291 or use our contact form to schedule a site visit, consultation, or to request a custom quote." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="pl-inner">
+    <img class="pl-logo" src="assets/logo.png" alt="Apex Eco Solutions">
+    <div class="pl-bar"><div class="pl-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- CURSORS -->
+<div class="cur" id="cur"></div>
+<div class="cur-r" id="curR"></div>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#process" onclick="closeMob()">Process</a>
+  <a href="#why" onclick="closeMob()">Why Us</a>
+  <a href="#faq" onclick="closeMob()">FAQ</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="tel:7782201291">📞 778-220-1291</a>
+  <span class="topbar-divider">|</span>
+  <a href="mailto:info@apexecosolutions.ca">info@apexecosolutions.ca</a>
+  <span class="topbar-divider">|</span>
+  <span>Maple Ridge, BC</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo" aria-label="Apex Eco Solutions home">
+    <img src="assets/logo.png" alt="Apex Eco Solutions" width="391" height="300">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="btn-lime nav-cta">Free Estimate <span class="arrow">→</span></a>
+  <div class="nav-ham" onclick="openMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-warning-tag fade-up">WorkSafeBC Licensed &amp; Insured</div>
+    <h1 class="big-heading fade-up d1">
+      SAFE.<br>
+      <span class="stroke">COMPLIANT.</span><br>
+      <span class="accent">DONE RIGHT.</span>
+    </h1>
+    <p class="hero-sub-text fade-up d2">
+      BC's trusted specialists in asbestos, lead &amp; mould abatement, plus certified fall protection and MEWP training. 35+ combined years of hands-on experience.
+    </p>
+    <div class="hero-actions fade-up d3">
+      <a href="#contact" class="btn-lime">Get a Free Estimate <span class="arrow">→</span></a>
+      <a href="#services" class="btn-outline">Our Services</a>
+    </div>
+    <div class="hero-creds fade-up d4">
+      <div class="hero-cred"><div class="hero-cred-dot"></div>Asbestos Abatement</div>
+      <div class="hero-cred"><div class="hero-cred-dot"></div>Lead Removal</div>
+      <div class="hero-cred"><div class="hero-cred-dot"></div>Mould Remediation</div>
+      <div class="hero-cred"><div class="hero-cred-dot"></div>Safety Training</div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img class="hero-right-img" src="assets/hero.jpg" alt="Asbestos abatement containment work area set up by Apex Eco Solutions" width="1600" height="1200">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-stat-box">
+      <div class="hero-stat"><strong>35+</strong><span>Years Combined<br>Experience</span></div>
+      <div class="hero-stat"><strong>100%</strong><span>WorkSafeBC<br>Compliant</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <!-- duplicated for seamless loop -->
+    <span class="ticker-item">Asbestos Abatement <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Lead Removal <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Mould Remediation <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Fall Protection Training <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">MEWP Certification <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Project Management <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">WorkSafeBC Licensed <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Asbestos Abatement <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Lead Removal <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Mould Remediation <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Fall Protection Training <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">MEWP Certification <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">Project Management <span class="ticker-sep">◆</span></span>
+    <span class="ticker-item">WorkSafeBC Licensed <span class="ticker-sep">◆</span></span>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><div class="ti-dot">✓</div>WorkSafeBC Approved</div>
+  <div class="trust-item"><div class="ti-dot">✓</div>Fully Insured</div>
+  <div class="trust-item"><div class="ti-dot">✓</div>Service Provided Across BC</div>
+  <div class="trust-item"><div class="ti-dot">✓</div>Residential &amp; Industrial</div>
+  <div class="trust-item"><div class="ti-dot">✓</div>Emergency Response</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <div class="tag fade-up">What We Do</div>
+      <h2 class="big-heading fade-up d1">OUR<br><span class="accent">SERVICES</span></h2>
+    </div>
+    <a href="#contact" class="btn-outline fade-up d2">Request a Quote <span class="arrow">→</span></a>
+  </div>
+
+  <div class="services-grid">
+    <!-- Asbestos -->
+    <div class="svc-card fade-up">
+      <div class="svc-num">01</div>
+      <div class="svc-icon">🦺</div>
+      <h3>Asbestos<br>Abatement</h3>
+      <p>Asbestos is dangerous, we're trained, insured, and WorkSafeBC-licensed to handle moderate and high-risk asbestos removal safely and legally. Vermiculite, glue bag, and concrete pipe included.</p>
+      <a href="#services-detail" class="svc-link" data-tab="abatement">View Services <span>→</span></a>
+    </div>
+    <!-- Lead -->
+    <div class="svc-card fade-up d1">
+      <div class="svc-num">02</div>
+      <div class="svc-icon">🔬</div>
+      <h3>Lead<br>Abatement</h3>
+      <p>Lead removal isn't optional, it's a legal and safety requirement. We're insured, trained, and follow the latest industry standards. Paint coatings, sand blasting, chemical stripping, and more.</p>
+      <a href="#services-detail" class="svc-link" data-tab="abatement">View Services <span>→</span></a>
+    </div>
+    <!-- Mould -->
+    <div class="svc-card fade-up d2">
+      <div class="svc-num">03</div>
+      <div class="svc-icon">🌿</div>
+      <h3>Mould<br>Remediation</h3>
+      <p>We respond quickly to mould issues with fully insured teams and proven, compliant remediation techniques. Attics, crawlspaces, restricted spaces, and anti-microbial treatments.</p>
+      <a href="#services-detail" class="svc-link" data-tab="abatement">View Services <span>→</span></a>
+    </div>
+    <!-- Fall Protection -->
+    <div class="svc-card fade-up d1">
+      <div class="svc-num">04</div>
+      <div class="svc-icon">⛑️</div>
+      <h3>Fall Protection<br>Training</h3>
+      <p>Competitive onsite certification tailored to your jobsite or industry. Hands-on practical training, PowerPoint retention quiz, and dual-day options with MEWP.</p>
+      <a href="#services-detail" class="svc-link" data-tab="training">View Services <span>→</span></a>
+    </div>
+    <!-- MEWP -->
+    <div class="svc-card fade-up d2">
+      <div class="svc-num">05</div>
+      <div class="svc-icon">🏗️</div>
+      <h3>MEWP<br>Certification</h3>
+      <p>Real-world scissor lift, articulating and boom training, covering pre-use inspections, hazard recognition, and safe maneuvering in tight jobsite conditions.</p>
+      <a href="#services-detail" class="svc-link" data-tab="training">View Services <span>→</span></a>
+    </div>
+    <!-- PM -->
+    <div class="svc-card fade-up d3">
+      <div class="svc-num">06</div>
+      <div class="svc-icon">📋</div>
+      <h3>Project<br>Management</h3>
+      <p>We keep your crews, trades, and timelines moving with experienced oversight, daily updates, regulatory filing, and clear communication from start to air clearance.</p>
+      <a href="#services-detail" class="svc-link" data-tab="pm">View Services <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DETAIL -->
+<section id="services-detail" style="padding:0 5vw 100px;background:var(--dark);">
+  <div class="svc-detail-tabs">
+    <button class="svc-tab active" data-target="abatement">Hazardous Materials</button>
+    <button class="svc-tab" data-target="training">Safety Training</button>
+    <button class="svc-tab" data-target="pm">Project Management</button>
+  </div>
+
+  <!-- Abatement Panel -->
+  <div class="svc-detail-panel active" id="panel-abatement">
+    <div class="svc-list-col">
+      <h4>Asbestos</h4>
+      <ul>
+        <li>Asbestos removal (moderate risk)</li>
+        <li>High-risk asbestos removal</li>
+        <li>Vermiculite removal</li>
+        <li>Glove bag removal</li>
+        <li>Concrete asbestos pipe removal</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>Lead</h4>
+      <ul>
+        <li>Lead painted coatings removal</li>
+        <li>Sand / media blasting services</li>
+        <li>Leachable lead waste management</li>
+        <li>Chemical stripping</li>
+        <li>Multi-surface paint prepping</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>Mould</h4>
+      <ul>
+        <li>Mould-impacted surface cleanup</li>
+        <li>Attic remediation &amp; soffit care</li>
+        <li>Crawlspace / restricted space remediation</li>
+        <li>Moisture source detection</li>
+        <li>Anti-microbial application</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Training Panel -->
+  <div class="svc-detail-panel" id="panel-training">
+    <div class="svc-list-col">
+      <h4>Fall Protection</h4>
+      <ul>
+        <li>Proper equipment use &amp; maintenance</li>
+        <li>Hands-on practical training</li>
+        <li>PowerPoint with retention quiz</li>
+        <li>Dual-day option with MEWP</li>
+        <li>Certifiable completion</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>MEWP Certification</h4>
+      <ul>
+        <li>Scissor lift training</li>
+        <li>Articulating &amp; straight boom</li>
+        <li>Hands-on practical training</li>
+        <li>PowerPoint with retention quiz</li>
+        <li>Hazard recognition module</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>Additional</h4>
+      <ul>
+        <li>Risk assessment training</li>
+        <li>Durable poly construct training</li>
+        <li>3-stage decontamination unit</li>
+        <li>Hands-on power tool training</li>
+        <li>Project documentation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PM Panel -->
+  <div class="svc-detail-panel" id="panel-pm">
+    <div class="svc-list-col">
+      <h4>Pre-Project</h4>
+      <ul>
+        <li>Job startup documentation</li>
+        <li>Filing all regulatory paperwork to WSBC</li>
+        <li>Comprehensive risk assessment</li>
+        <li>Thorough pre-job client discussions</li>
+        <li>Preparation of JHAs</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>During Project</h4>
+      <ul>
+        <li>Upkeep of FLHAs</li>
+        <li>Daily job updates</li>
+        <li>Coordinating air quality follow-ups</li>
+        <li>Photographic &amp; written site records</li>
+        <li>Flexible with shifting timelines</li>
+      </ul>
+    </div>
+    <div class="svc-list-col">
+      <h4>Project Close</h4>
+      <ul>
+        <li>Air clearance completion</li>
+        <li>Visual inspections</li>
+        <li>Client walkthrough sign-off</li>
+        <li>Document retention for governing bodies</li>
+        <li>Ongoing availability post-project</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / FOUNDERS -->
+<section id="about">
+  <div class="about-header">
+    <div class="tag fade-up">Meet the Team</div>
+    <h2 class="big-heading fade-up d1">FOUNDED BY<br><span class="accent">EXPERTS.</span></h2>
+    <p class="body-p fade-up d2" style="margin-top:16px;">
+      Apex Eco Solutions was built on the belief that safety must be ensured through both expert abatement and proper training. With 35+ combined years of field experience, our founders bring unmatched hands-on knowledge to every project.
+    </p>
+  </div>
+
+  <div class="founders-grid">
+    <!-- Greg -->
+    <div class="founder-card fade-up">
+      <div class="founder-img-wrap">
+        <img src="assets/greg.jpg" alt="Greg Rauscher, Co-Founder of Apex Eco Solutions" width="700" height="718">
+      </div>
+      <div class="founder-info">
+        <div class="founder-title">Co-Founder &amp; Director</div>
+        <div class="founder-name">Greg Rauscher</div>
+        <p class="founder-bio">
+          Greg began his hazardous materials career in 2009 and rose to foreman on BC's largest private investment at the time, the Rio Tinto Kitimat Modernization Project, by 2011. With deep experience in industrial emergency response, environmental safety, and electrical construction, he brings a practical, hands-on approach to every project.
+        </p>
+        <div class="founder-years">Started in hazmat: <strong>2009</strong></div>
+      </div>
+    </div>
+
+    <!-- James -->
+    <div class="founder-card fade-up d1">
+      <div class="founder-img-wrap">
+        <img src="assets/james.jpg" alt="James Davidson, Co-Founder of Apex Eco Solutions" width="700" height="662">
+      </div>
+      <div class="founder-info">
+        <div class="founder-title">Co-Founder &amp; Director</div>
+        <div class="founder-name">James Davidson</div>
+        <p class="founder-bio">
+          James started in hazmat removal in 2005 as a labourer and advanced to a trusted foreman by 2009. He's managed major BC projects including the Boundary Bay heritage hangar replacement and large-scale BC Hydro work. Known for finding the most cost-effective solution without compromising the final standard, he always has your best interest in mind.
+        </p>
+        <div class="founder-years">Started in hazmat: <strong>2005</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="tag fade-up" style="justify-content:center;margin-bottom:12px;"><span style="width:22px;height:2px;background:var(--lime);display:inline-block;margin-right:10px;"></span>How It Works</div>
+  <h2 class="big-heading fade-up" style="text-align:center;">OUR <span class="accent">PROCESS</span></h2>
+
+  <div class="process-grid">
+    <div class="process-step fade-up">
+      <div class="step-num">01</div>
+      <h4>Free Estimate</h4>
+      <p>Contact us. We assess your site and scope, no obligation, no guesswork.</p>
+    </div>
+    <div class="process-step fade-up d1">
+      <div class="step-num">02</div>
+      <h4>Site Assessment</h4>
+      <p>We assess access routes, containment zones, and disposal logistics in detail.</p>
+    </div>
+    <div class="process-step fade-up d2">
+      <div class="step-num">03</div>
+      <h4>WSBC Filing</h4>
+      <p>All regulatory paperwork, risk assessments, and JHAs completed before work begins.</p>
+    </div>
+    <div class="process-step fade-up d3">
+      <div class="step-num">04</div>
+      <h4>Safe Removal</h4>
+      <p>Our trained teams execute with daily updates, clean zones, and full documentation.</p>
+    </div>
+    <div class="process-step fade-up d4">
+      <div class="step-num">05</div>
+      <h4>Air Clearance</h4>
+      <p>Project closed with air clearance, visual inspection, and client sign-off walkthrough.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="why-img-wrap fade-up">
+    <div class="why-gallery">
+      <img class="g-feat" src="assets/gallery/g-feat.jpg" alt="Apex Eco Solutions interior abatement strip-out project" loading="lazy" width="1200" height="900">
+      <img src="assets/gallery/g1.jpg" alt="Containment chamber set up for hazardous materials abatement" loading="lazy" width="1000" height="750">
+      <img src="assets/gallery/g2.jpg" alt="Interior abatement containment work area by Apex Eco Solutions" loading="lazy" width="1000" height="750">
+      <img src="assets/gallery/g3.jpg" alt="Interior strip-out with floor protection in place" loading="lazy" width="760" height="1013">
+      <img src="assets/gallery/g4.jpg" alt="Poly-sheeted floor protection on an abatement job" loading="lazy" width="760" height="1013">
+      <img src="assets/gallery/g5.jpg" alt="Stairwell containment during abatement" loading="lazy" width="760" height="1013">
+      <img src="assets/gallery/g6.jpg" alt="Abatement work area preparation" loading="lazy" width="1000" height="750">
+    </div>
+    <div class="why-overlay-stat">
+      <strong>35+</strong>
+      <span>Years Combined<br>Experience</span>
+    </div>
+  </div>
+
+  <div class="why-content fade-up d1">
+    <div class="tag">Why Choose Apex</div>
+    <h2 class="big-heading">NO PROJECT<br>TOO <span class="accent">BIG</span><br>OR SMALL.</h2>
+    <p class="body-p">Before we start, we assess every detail, even for minor scopes. We plan access routes, containment zones, and disposal logistics to ensure the job is done smoothly, without mess or disruption to your home, business, or job site.</p>
+    <div class="why-list">
+      <div class="why-item fade-up d2">
+        <div class="why-item-icon">🏅</div>
+        <div class="why-item-text">
+          <h4>WorkSafeBC Licensed</h4>
+          <p>Fully approved, insured, and always compliant with the latest BC regulations and safety standards.</p>
+        </div>
+      </div>
+      <div class="why-item fade-up d3">
+        <div class="why-item-icon">🔧</div>
+        <div class="why-item-text">
+          <h4>Field-Proven Leadership</h4>
+          <p>Both founders have 15–20 years of hands-on experience across industrial, residential, and heritage projects.</p>
+        </div>
+      </div>
+      <div class="why-item fade-up d4">
+        <div class="why-item-icon">💬</div>
+        <div class="why-item-text">
+          <h4>Clear Communication</h4>
+          <p>Daily job updates, photographic records, and a client walkthrough at every project close. No surprises.</p>
+        </div>
+      </div>
+      <div class="why-item fade-up d5">
+        <div class="why-item-icon">💰</div>
+        <div class="why-item-text">
+          <h4>Cost-Effective Solutions</h4>
+          <p>James and Greg are known for finding the smartest path through any project, on time, on budget.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<div id="certs">
+  <div class="certs-left fade-up">
+    <h2>CERTIFIED. COMPLIANT.<br>READY TO WORK.</h2>
+    <p>We carry all necessary certifications to operate legally across BC and Alberta, so you never have to worry about compliance.</p>
+  </div>
+  <div class="certs-badges fade-up d2">
+    <div class="cert-badge">WorkSafeBC Approved</div>
+    <div class="cert-badge">Fall Protection Cert.</div>
+    <div class="cert-badge">MEWP Certified</div>
+    <div class="cert-badge">Fully Insured</div>
+  </div>
+</div>
+
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-header fade-up">
+    <div class="tag" style="justify-content:center;">Questions, Answered</div>
+    <h2 class="big-heading" style="text-align:center;">FREQUENTLY<br><span class="accent">ASKED</span></h2>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item fade-up">
+      <summary>What types of buildings do you service for abatement?</summary>
+      <div class="faq-a">We provide abatement services for residential, commercial, and industrial properties, with solutions designed to address each property's specific hazardous material concerns while meeting all regulatory standards.</div>
+    </details>
+    <details class="faq-item fade-up">
+      <summary>How do I know if my property has asbestos, lead, or mould?</summary>
+      <div class="faq-a">Properties built before the early 1990s are more likely to contain asbestos or lead-based materials, while mould can develop in any building with moisture issues. We can help connect you with certified consultants to handle proper testing before any work begins.</div>
+    </details>
+    <details class="faq-item fade-up">
+      <summary>Are your training programs certified and recognized?</summary>
+      <div class="faq-a">Yes, our Fall Protection and MEWP training programs follow industry standards and are certified, ensuring your workers meet provincial safety compliance and legal obligations.</div>
+    </details>
+    <details class="faq-item fade-up">
+      <summary>What safety measures do you take during abatement?</summary>
+      <div class="faq-a">Safety measures vary depending on the risk level of the hazardous materials. Based on the type of material and the scope of work, different procedures are followed. These can include containment, negative air pressure, protective equipment, and safe disposal to protect workers, occupants, and the environment.</div>
+    </details>
+    <details class="faq-item fade-up">
+      <summary>How do I schedule a site assessment or consultation?</summary>
+      <div class="faq-a">You can call us directly at <a href="tel:7782201291" style="color:var(--lime);text-decoration:none;">778-220-1291</a> or use our contact form below to schedule a site visit, consultation, or to request a custom quote.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info-col fade-up">
+      <div class="tag">Get in Touch</div>
+      <h2 class="big-heading">GET YOUR<br><span class="accent">FREE</span><br>ESTIMATE</h2>
+      <p class="body-p">Whether it's a small residential removal or a large industrial project, we'll give you a straight answer, a fair price, and a safe result.</p>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <a href="tel:7782201291">778-220-1291</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉️</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <a href="mailto:info@apexecosolutions.ca">info@apexecosolutions.ca</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <div class="contact-detail-label">Service Area</div>
+            <span>Maple Ridge, BC &amp; surrounding areas</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-social">
+        <a href="https://www.facebook.com/profile.php?id=61575614259385" target="_blank" class="soc-btn">f</a>
+        <a href="https://www.instagram.com/apex.eco.solutions/" target="_blank" class="soc-btn">ig</a>
+        <a href="#" class="soc-btn">in</a>
+      </div>
+    </div>
+
+    <div class="fade-up d2">
+      <div class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name *">
+          <input type="tel" placeholder="Phone Number *">
+        </div>
+        <input type="email" placeholder="Email Address *">
+        <select>
+          <option value="" disabled selected>Service Required...</option>
+          <option>Asbestos Abatement</option>
+          <option>Lead Abatement</option>
+          <option>Mould Remediation</option>
+          <option>Fall Protection Training</option>
+          <option>MEWP Certification</option>
+          <option>Project Management</option>
+          <option>Multiple Services</option>
+          <option>Not Sure, Need Assessment</option>
+        </select>
+        <div class="form-row">
+          <select>
+            <option value="" disabled selected>Property Type...</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Industrial</option>
+            <option>Heritage / Institutional</option>
+          </select>
+          <select>
+            <option value="" disabled selected>Project Timeline...</option>
+            <option>Emergency, ASAP</option>
+            <option>Within 1 Week</option>
+            <option>Within 1 Month</option>
+            <option>Planning Phase</option>
+          </select>
+        </div>
+        <textarea placeholder="Tell us about your project, location, scope, any known materials..."></textarea>
+        <p class="form-note">* Required. We typically respond within 4 business hours.</p>
+        <button class="btn-lime" onclick="handleSubmit(this)" style="width:100%;justify-content:center;">
+          Send Message, Get Free Estimate <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-text">APEX <span>ECO</span></div>
+      <p>WorkSafeBC-licensed hazardous materials abatement and safety training. Serving BC and Alberta with integrity, expertise, and clear communication.</p>
+      <div style="display:flex;gap:10px;margin-top:18px;">
+        <a href="https://www.facebook.com/profile.php?id=61575614259385" target="_blank" class="soc-btn">f</a>
+        <a href="https://www.instagram.com/apex.eco.solutions/" target="_blank" class="soc-btn">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Asbestos Abatement</a></li>
+        <li><a href="#services">Lead Abatement</a></li>
+        <li><a href="#services">Mould Remediation</a></li>
+        <li><a href="#services">Fall Protection</a></li>
+        <li><a href="#services">MEWP Training</a></li>
+        <li><a href="#services">Project Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#why">Why Apex</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:7782201291">778-220-1291</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>©2026 Apex Eco Solutions. All rights reserved. Maple Ridge, BC.</span>
+    <span>"Ensuring safety through expert abatement and training"</span>
+  </div>
+</footer>
+
+<script>
+  // ── PRELOADER (hide as soon as the page is ready; never delays load) ──
+  (function(){
+    var pl=document.getElementById('preloader');
+    if(!pl) return;
+    function hide(){ if(pl.classList.contains('done')) return;
+      pl.classList.add('done'); setTimeout(function(){ pl.style.display='none'; },600); }
+    if(document.readyState==='complete') hide();
+    else window.addEventListener('load',hide);
+    setTimeout(hide,5000); // safety fallback
+  })();
+
+  // ── CURSOR ──
+  const cur = document.getElementById('cur');
+  const curR = document.getElementById('curR');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+  (function tick(){
+    rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
+    cur.style.left=mx+'px'; cur.style.top=my+'px';
+    curR.style.left=rx+'px'; curR.style.top=ry+'px';
+    requestAnimationFrame(tick);
+  })();
+  document.querySelectorAll('a,button,.svc-card,.why-item').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';curR.style.width='50px';curR.style.height='50px';});
+    el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';curR.style.width='32px';curR.style.height='32px';});
+  });
+
+  // ── SCROLL OBSERVER ──
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+  },{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+  document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+  // ── MOBILE MENU ──
+  function openMob(){document.getElementById('mobMenu').classList.add('open');document.body.style.overflow='hidden';}
+  function closeMob(){document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow='';}
+
+  // ── SERVICE TABS ──
+  document.querySelectorAll('.svc-tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('.svc-tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.svc-detail-panel').forEach(p=>p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-'+tab.dataset.target).classList.add('active');
+    });
+  });
+
+  // Service card links → tab switch
+  document.querySelectorAll('.svc-link[data-tab]').forEach(link=>{
+    link.addEventListener('click',e=>{
+      e.preventDefault();
+      const target = link.dataset.tab;
+      document.getElementById('services-detail').scrollIntoView({behavior:'smooth'});
+      setTimeout(()=>{
+        document.querySelectorAll('.svc-tab').forEach(t=>t.classList.remove('active'));
+        document.querySelectorAll('.svc-detail-panel').forEach(p=>p.classList.remove('active'));
+        document.querySelector('.svc-tab[data-target="'+target+'"]').classList.add('active');
+        document.getElementById('panel-'+target).classList.add('active');
+      },400);
+    });
+  });
+
+  // ── FORM ──
+  function handleSubmit(btn){
+    const orig=btn.innerHTML;
+    btn.innerHTML='Sending…';btn.disabled=true;
+    setTimeout(()=>{
+      btn.innerHTML='✓ Message Sent! We\'ll be in touch shortly.';
+      btn.style.background='#3a8f5a';
+      setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';},3500);
+    },1400);
+  }
+
+  // ── SMOOTH SCROLL ──
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+</script>
+</body>
+</html>
