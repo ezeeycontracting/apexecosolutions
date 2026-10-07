@@ -27,6 +27,9 @@
 <meta name="twitter:title" content="Apex Eco Solutions | Asbestos, Lead & Mould Abatement, BC">
 <meta name="twitter:description" content="WorkSafeBC-licensed abatement & safety training across British Columbia.">
 <meta name="twitter:image" content="https://apexecosolutions.ca/assets/og-image.jpg">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTS581QL3L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WTS581QL3L');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
@@ -120,7 +123,7 @@
     padding:7px 5vw;
     font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--black);
   }
-  .topbar a { color:var(--black);text-decoration:none;transition:opacity .2s; }
+  .topbar a { color:var(--black);text-decoration:none;transition:opacity .2s;white-space:nowrap; }
   .topbar a:hover { opacity:.7; }
   .topbar-divider { opacity:.35; }
 
@@ -486,6 +489,7 @@
   /* ─── CONTACT ─── */
   #contact { padding:110px 5vw;background:var(--steel); }
   .contact-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:start; }
+  #estimate-form { align-self:center;scroll-margin-top:92px; }
   .contact-info-col { display:flex;flex-direction:column;gap:24px; }
   .contact-info-col .big-heading { font-size:clamp(2.8rem,5vw,5rem); }
   .contact-details { display:flex;flex-direction:column;gap:16px;margin-top:8px; }
@@ -517,11 +521,18 @@
     outline:none;transition:border-color .25s,background .25s;
     -webkit-appearance:none;
   }
-  input::placeholder, textarea::placeholder { color:rgba(255,255,255,.3); }
+  input::placeholder, textarea::placeholder { color:rgba(255,255,255,.65); }
   input:focus, textarea:focus, select:focus { border-color:var(--lime);background:rgba(200,230,0,.04); }
   select option { background:var(--steel); }
   textarea { resize:vertical;min-height:150px; }
   .form-note { font-size:.72rem;color:rgba(255,255,255,.3);letter-spacing:.04em; }
+  .form-done { display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 20px;text-align:center; }
+  .form-done svg { width:72px;height:72px;margin-bottom:24px; }
+  .form-done circle { stroke:var(--lime);stroke-width:3;fill:none;stroke-dasharray:214;stroke-dashoffset:214;animation:formDraw .6s ease-out forwards; }
+  .form-done path { stroke:var(--lime);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:50;stroke-dashoffset:50;animation:formDraw .35s .55s ease-out forwards; }
+  .form-done p { font-size:1.15rem;color:var(--white);line-height:1.5;opacity:0;animation:formFade .4s .8s ease-out forwards; }
+  @keyframes formDraw { to { stroke-dashoffset:0; } }
+  @keyframes formFade { to { opacity:1; } }
 
   /* ─── FOOTER ─── */
   footer {
@@ -564,20 +575,25 @@
     .svc-detail-panel.active { grid-template-columns:1fr 1fr; }
   }
   @media(max-width:768px){
-    .topbar { justify-content:center; }
+    .topbar { justify-content:center;flex-wrap:wrap;gap:4px 12px; }
+    .topbar-divider { display:none; }
     .nav-links,.nav-cta { display:none; }
     .nav-ham { display:flex; }
     .services-grid { grid-template-columns:1fr; }
     .test-grid { grid-template-columns:1fr; }
     .founder-card { grid-template-columns:1fr; }
     .founder-img-wrap { min-height:200px;max-height:200px; }
+    .founder-img-wrap img { object-position:top center; }
     .process-grid { grid-template-columns:1fr 1fr;gap:24px; }
+    .process-step:last-child { grid-column:1 / -1; }
     .svc-detail-panel.active { grid-template-columns:1fr; }
     .form-row { grid-template-columns:1fr; }
     .footer-top { grid-template-columns:1fr; gap:32px; }
     #certs { flex-direction:column; }
     .hero-stat-box { display:none; }
     .hero-creds { gap:14px; }
+    .cur,.cur-r { display:none; }
+    .faq-item summary { cursor:pointer; }
   }
 
   /* ─── FAQ ─── */
@@ -686,7 +702,7 @@
     <li><a href="#why">Why Us</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#contact" class="btn-lime nav-cta">Free Estimate <span class="arrow">→</span></a>
+  <a href="#estimate-form" class="btn-lime nav-cta">Free Estimate <span class="arrow">→</span></a>
   <div class="nav-ham" onclick="openMob()"><span></span><span></span><span></span></div>
 </nav>
 
@@ -703,7 +719,7 @@
       BC's trusted specialists in asbestos, lead &amp; mould abatement, plus certified fall protection and MEWP training. 35+ combined years of hands-on experience.
     </p>
     <div class="hero-actions fade-up d3">
-      <a href="#contact" class="btn-lime">Get a Free Estimate <span class="arrow">→</span></a>
+      <a href="#estimate-form" class="btn-lime">Get a Free Estimate <span class="arrow">→</span></a>
       <a href="#services" class="btn-outline">Our Services</a>
     </div>
     <div class="hero-creds fade-up d4">
@@ -761,7 +777,7 @@
       <div class="tag fade-up">What We Do</div>
       <h2 class="big-heading fade-up d1">OUR<br><span class="accent">SERVICES</span></h2>
     </div>
-    <a href="#contact" class="btn-outline fade-up d2">Request a Quote <span class="arrow">→</span></a>
+    <a href="#estimate-form" class="btn-outline fade-up d2">Request a Quote <span class="arrow">→</span></a>
   </div>
 
   <div class="services-grid">
@@ -972,7 +988,7 @@
 
 <!-- PROCESS -->
 <section id="process">
-  <div class="tag fade-up" style="justify-content:center;margin-bottom:12px;"><span style="width:22px;height:2px;background:var(--lime);display:inline-block;margin-right:10px;"></span>How It Works</div>
+  <div style="text-align:center;margin-bottom:12px;"><div class="tag fade-up" style="display:inline-flex;">How It Works</div></div>
   <h2 class="big-heading fade-up" style="text-align:center;">OUR <span class="accent">PROCESS</span></h2>
 
   <div class="process-grid">
@@ -1135,20 +1151,25 @@
         </div>
       </div>
       <div class="contact-social">
-        <a href="https://www.facebook.com/profile.php?id=61575614259385" target="_blank" class="soc-btn">f</a>
+        <a href="https://www.facebook.com/people/Apex-Eco-Solutions/61575614259385/" target="_blank" class="soc-btn">f</a>
         <a href="https://www.instagram.com/apex.eco.solutions/" target="_blank" class="soc-btn">ig</a>
-        <a href="#" class="soc-btn">in</a>
       </div>
     </div>
 
-    <div class="fade-up d2">
-      <div class="contact-form">
-        <div class="form-row">
-          <input type="text" placeholder="Your Name *">
-          <input type="tel" placeholder="Phone Number *">
+    <div id="estimate-form" class="fade-up d2">
+      <form class="contact-form" id="apexForm">
+        <div style="display:none" aria-hidden="true">
+          <input type="text" name="bot_field" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other">
         </div>
-        <input type="email" placeholder="Email Address *">
-        <select>
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="First Name *" required>
+          <input type="text" name="last_name" placeholder="Last Name *" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone Number *" required>
+          <input type="email" name="email" placeholder="Email Address *" required>
+        </div>
+        <select name="service">
           <option value="" disabled selected>Service Required...</option>
           <option>Asbestos Abatement</option>
           <option>Lead Abatement</option>
@@ -1160,14 +1181,14 @@
           <option>Not Sure, Need Assessment</option>
         </select>
         <div class="form-row">
-          <select>
+          <select name="property_type">
             <option value="" disabled selected>Property Type...</option>
             <option>Residential</option>
             <option>Commercial</option>
             <option>Industrial</option>
             <option>Heritage / Institutional</option>
           </select>
-          <select>
+          <select name="timeline">
             <option value="" disabled selected>Project Timeline...</option>
             <option>Emergency, ASAP</option>
             <option>Within 1 Week</option>
@@ -1175,12 +1196,12 @@
             <option>Planning Phase</option>
           </select>
         </div>
-        <textarea placeholder="Tell us about your project, location, scope, any known materials..."></textarea>
+        <textarea name="message" placeholder="Tell us about your project, location, scope, any known materials..."></textarea>
         <p class="form-note">* Required. We typically respond within 4 business hours.</p>
-        <button class="btn-lime" onclick="handleSubmit(this)" style="width:100%;justify-content:center;">
+        <button type="submit" class="btn-lime" style="width:100%;justify-content:center;">
           Send Message, Get Free Estimate <span class="arrow">→</span>
         </button>
-      </div>
+      </form>
     </div>
   </div>
 </section>
@@ -1238,20 +1259,22 @@
   })();
 
   // ── CURSOR ──
-  const cur = document.getElementById('cur');
-  const curR = document.getElementById('curR');
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
-  (function tick(){
-    rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
-    cur.style.left=mx+'px'; cur.style.top=my+'px';
-    curR.style.left=rx+'px'; curR.style.top=ry+'px';
-    requestAnimationFrame(tick);
-  })();
-  document.querySelectorAll('a,button,.svc-card,.why-item').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';curR.style.width='50px';curR.style.height='50px';});
-    el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';curR.style.width='32px';curR.style.height='32px';});
-  });
+  if(!('ontouchstart' in window) && !navigator.maxTouchPoints){
+    const cur = document.getElementById('cur');
+    const curR = document.getElementById('curR');
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+    (function tick(){
+      rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
+      cur.style.left=mx+'px'; cur.style.top=my+'px';
+      curR.style.left=rx+'px'; curR.style.top=ry+'px';
+      requestAnimationFrame(tick);
+    })();
+    document.querySelectorAll('a,button,.svc-card,.why-item').forEach(el=>{
+      el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';curR.style.width='50px';curR.style.height='50px';});
+      el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';curR.style.width='32px';curR.style.height='32px';});
+    });
+  }
 
   // ── SCROLL OBSERVER ──
   const obs = new IntersectionObserver(entries=>{
@@ -1289,15 +1312,53 @@
   });
 
   // ── FORM ──
-  function handleSubmit(btn){
-    const orig=btn.innerHTML;
-    btn.innerHTML='Sending…';btn.disabled=true;
-    setTimeout(()=>{
-      btn.innerHTML='✓ Message Sent! We\'ll be in touch shortly.';
-      btn.style.background='#3a8f5a';
-      setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';},3500);
-    },1400);
+  var APEX_WEBHOOK = 'https://hook.us2.make.com/vua36eulsnn2evepmaeb4lawqxq9rsr3';
+  var apexForm = document.getElementById('apexForm');
+  function formDone(){
+    document.getElementById('estimate-form').innerHTML =
+      '<div class="form-done" role="status">' +
+      '<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34"/><path d="M21 37l10 10 20-22"/></svg>' +
+      '<p>We\'ll get back to you shortly.</p>' +
+      '</div>';
   }
+  apexForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var form = apexForm;
+    var btn = form.querySelector('button[type="submit"]');
+    var val = function(n){ return form.querySelector('[name="'+n+'"]').value.trim(); };
+    // Honeypot: bots fill it. Show the normal success state and send nothing.
+    if(val('bot_field')){ formDone(); return; }
+    var fn = val('first_name'), ln = val('last_name'), ph = val('phone'), em = val('email');
+    // Never POST an empty payload, even when browser validation is bypassed.
+    if(!fn || !ln || !ph || !/^\S+@\S+\.\S+$/.test(em)){
+      if(form.reportValidity) form.reportValidity();
+      return;
+    }
+    var orig = btn.innerHTML;
+    btn.innerHTML = 'Sending…'; btn.disabled = true;
+    var fd = new FormData();
+    fd.append('first_name', fn);
+    fd.append('last_name', ln);
+    fd.append('full_name', (fn + ' ' + ln).trim());
+    fd.append('phone', ph);
+    fd.append('email', em);
+    fd.append('service_required', val('service'));
+    fd.append('property_type', val('property_type'));
+    fd.append('project_timeline', val('timeline'));
+    fd.append('project_description', val('message'));
+    fd.append('reply_to', em);
+    // Only a real submission carries this; the automation filters on it.
+    fd.append('source', 'apexecosolutions.ca');
+    fd.append('page', location.href);
+    fd.append('submitted_at', new Date().toISOString());
+    fetch(APEX_WEBHOOK, { method:'POST', body:fd })
+      .then(formDone)
+      .catch(function(){
+        btn.innerHTML = 'Error — Please Try Again';
+        btn.style.background = '#c0392b';
+        setTimeout(function(){ btn.innerHTML=orig; btn.disabled=false; btn.style.background=''; }, 3500);
+      });
+  });
 
   // ── SMOOTH SCROLL ──
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
