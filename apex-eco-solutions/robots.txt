@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://apexecosolutions.ca/sitemap.xml
